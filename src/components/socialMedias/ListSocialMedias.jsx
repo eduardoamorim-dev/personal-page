@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import linkedin from "../assets/icons/linkedin.svg";
-import github from "../assets/icons/github.svg";
-import instagram from "../assets/icons/instagram.svg";
-import seta from "../assets/icons/seta-acess.svg";
+import linkedin from "../../assets/icons/linkedin.svg";
+import github from "../../assets/icons/github.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import seta from "../../assets/icons/seta-acess.svg";
 
 export const ListSocialMedias = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

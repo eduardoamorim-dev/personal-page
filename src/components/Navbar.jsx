@@ -1,6 +1,7 @@
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { navItems } from "../constants";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -24,12 +25,12 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12 text-xl mb-5">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a
-                  href={item.href}
-                  className="relative  after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:content-[''] after:transition-all after:duration-300 after:scale-x-0 hover:after:scale-x-100"
+                <Link
+                  to={item.path}
+                  className="relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-500 after:content-[''] after:transition-all after:duration-300 after:scale-x-0 hover:after:scale-x-100"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -45,7 +46,7 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.href}>{item.label}</a>
+                  <Link to={item.path}>{item.label}</Link>
                 </li>
               ))}
             </ul>
