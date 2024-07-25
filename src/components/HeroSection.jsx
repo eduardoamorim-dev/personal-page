@@ -1,5 +1,7 @@
 import { ListSocialMedias } from "./ListSocialMedias";
 
+import seta from "../assets/icons/seta-right.svg";
+
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-10 lg:mt-32">
@@ -20,6 +22,13 @@ const HeroSection = () => {
       <div className="mt-10">
         <ListSocialMedias />
       </div>
+
+      <a href="#" className="flex items-center justify-start space-x-2 mt-5">
+        <span className="bg-gradient-to-r from-gray-300 to-gray-500 text-transparent bg-clip-text font-Orbitron uppercase">
+          {/* Get to know me */} Website under construction
+        </span>
+        {/* <img src={seta} alt="seta" className="w-4 h-4" /> */}
+      </a>
     </div>
   );
 };

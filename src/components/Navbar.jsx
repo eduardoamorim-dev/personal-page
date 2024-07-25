@@ -1,7 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../constants";
-import "../index.css";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -16,8 +15,8 @@ const Navbar = () => {
         <div className="flex justify-center items-center">
           <div className="flex items-center flex-shrink-0">
             <div className="flex flex-col items-start mr-5">
-              <span className="bg-gradient-to-r from-indigo-500 to-indigo-900 text-transparent text-xl bg-clip-text font-Orbitron">
-                EDUARDO AMORIM
+              <span className="bg-gradient-to-r from-indigo-500 to-indigo-900 text-transparent text-xl bg-clip-text font-Orbitron uppercase">
+                eduardo amorim
               </span>
               <span className="text-sm tracking-tight">Software Developer</span>
             </div>
@@ -36,7 +35,7 @@ const Navbar = () => {
           </ul>
 
           <div className="lg:hidden md:flex flex-col justify-end">
-            <button onClick={toggleNavbar}>
+            <button className="mb-5" onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>

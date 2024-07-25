@@ -6,9 +6,12 @@ export default {
     extend: {
       boxShadow: {
         "text-blue": "0 0 5px rgba(30, 64, 175, 0.8)",
+        "border-purple": "0 0 0 1px rgba(77, 77, 192, 0.8)",
       },
       colors: {
         "blue-light": "#1e40af",
+        customGray: "#1E1E1E",
+        hoverGray: "#444444",
       },
     },
   },
