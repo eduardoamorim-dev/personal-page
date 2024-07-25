@@ -7,10 +7,13 @@ import Home from "./components/pages/Home";
 import Project from "./components/pages/Project";
 import Work from "./components/pages/Work";
 import Article from "./components/pages/Article";
+import GradientCursor from "./components/shared/GradientCursor";
+
 
 export default function App() {
   return (
     <Router>
+      <GradientCursor />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ListSocialMedias } from "../socialMedias/ListSocialMedias";
+import { ListSocialMedias } from "../shared/ListSocialMedias";
 
-// import seta from "../assets/icons/seta-right.svg";
+import seta from "../../assets/icons/seta-right.svg";
 
 const Home = () => {
   return (
@@ -30,9 +30,9 @@ const Home = () => {
         className="flex items-center justify-start space-x-2 mt-5"
       >
         <span className="bg-gradient-to-r from-gray-300 to-gray-500 text-transparent bg-clip-text font-Orbitron uppercase">
-          Website under construction
+          get to know me
         </span>
-        {/* <img src={seta} alt="seta" className="w-4 h-4" /> */}
+        <img src={seta} alt="seta" className="w-4 h-4" />
       </Link>
     </div>
   );
