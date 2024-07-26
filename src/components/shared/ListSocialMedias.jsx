@@ -20,6 +20,10 @@ export const ListSocialMedias = () => {
     };
   }, []);
 
+  const handleButtonClick = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
+
   return (
     <div
       className={`container px-4 mx-auto relative lg:text-sm ${
@@ -28,11 +32,11 @@ export const ListSocialMedias = () => {
     >
       <div className="flex justify-center items-center">
         <div className="flex flex-col space-y-4 w-full">
-          <a
-            href="https://linkedin.com/in/eduardoamorim-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-customGray h-[61px] border-3 flex items-center hover:bg-hoverGray"
+          <button
+            onClick={() =>
+              handleButtonClick("https://linkedin.com/in/eduardoamorim-dev")
+            }
+            className="bg-customGray h-[61px] border-3 flex items-center hover:bg-hoverGray rounded-md w-full"
           >
             <div className="flex items-center w-full justify-between px-4">
               <div className="flex items-center">
@@ -41,13 +45,13 @@ export const ListSocialMedias = () => {
               </div>
               <img src={seta} alt="acess" />
             </div>
-          </a>
+          </button>
 
-          <a
-            href="https://github.com/eduardoamorim-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-customGray h-[61px] border-3 flex items-center hover:bg-hoverGray"
+          <button
+            onClick={() =>
+              handleButtonClick("https://github.com/eduardoamorim-dev")
+            }
+            className="bg-customGray h-[61px] border-3 flex items-center hover:bg-hoverGray rounded-md w-full"
           >
             <div className="flex items-center w-full justify-between px-4">
               <div className="flex items-center">
@@ -56,13 +60,13 @@ export const ListSocialMedias = () => {
               </div>
               <img src={seta} alt="acess" />
             </div>
-          </a>
+          </button>
 
-          <a
-            href="https://instagram.com/eduardoamorim.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-customGray h-[61px] border-3 flex items-center hover:bg-hoverGray"
+          <button
+            onClick={() =>
+              handleButtonClick("https://instagram.com/eduardoamorim.dev")
+            }
+            className="bg-customGray h-[61px] border-3 flex items-center hover:bg-hoverGray rounded-md w-full"
           >
             <div className="flex items-center w-full justify-between px-4">
               <div className="flex items-center">
@@ -71,7 +75,7 @@ export const ListSocialMedias = () => {
               </div>
               <img src={seta} alt="acess" />
             </div>
-          </a>
+          </button>
         </div>
       </div>
     </div>

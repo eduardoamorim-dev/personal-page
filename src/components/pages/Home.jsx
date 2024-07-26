@@ -17,7 +17,8 @@ const Home = () => {
         originally from Brazil 🇧🇷
       </h2>
 
-      <p className="mt-16 text-xl text-center text-neutral-500 max-w-4xl">
+
+      <p className=" text-xl text-center text-neutral-500 max-w-4xl mt-8">
         You can find me online at the links below
       </p>
 

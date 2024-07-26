@@ -15,12 +15,12 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm ">
         <div className="flex justify-center items-center mt-3">
           <div className="flex items-center flex-shrink-0">
-            <div className="flex flex-col items-start mr-5">
+            <Link to="/" className="flex flex-col items-start mr-5">
               <span className="bg-gradient-to-r from-indigo-500 to-indigo-900 text-transparent text-xl bg-clip-text font-Orbitron uppercase">
                 eduardo amorim
               </span>
               <span className="text-sm tracking-tight">Software Developer</span>
-            </div>
+            </Link>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-xl mb-5">
             {navItems.map((item, index) => (

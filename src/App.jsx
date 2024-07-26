@@ -9,7 +9,6 @@ import Work from "./components/pages/Work";
 import Article from "./components/pages/Article";
 import GradientCursor from "./components/shared/GradientCursor";
 
-
 export default function App() {
   return (
     <Router>
