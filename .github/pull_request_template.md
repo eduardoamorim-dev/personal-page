@@ -2,8 +2,6 @@
 
 ## Resumo
 
-<!-- Coloque aqui um sumário/resumo do que foi feito. -->
-
 - **O quê?**
 <!-- Responda aqui embaixo -->
 - **Por quê?**
