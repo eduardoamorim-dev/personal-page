@@ -15,14 +15,14 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative lg:text-sm ">
         <div className="flex justify-center items-center mt-3">
           <div className="flex items-center flex-shrink-0">
-            <Link to="/" className="flex flex-col items-start mr-5">
+            <Link to="/" className="flex flex-col items-center mr-5">
               <span className="bg-gradient-to-r from-indigo-500 to-indigo-900 text-transparent text-xl bg-clip-text font-Orbitron uppercase">
                 eduardo amorim
               </span>
               <span className="text-sm tracking-tight">Software Developer</span>
             </Link>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12 text-xl mb-5">
+          {/* <ul className="hidden lg:flex ml-14 space-x-12 text-xl mb-5">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link
@@ -40,18 +40,19 @@ const Navbar = () => {
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
+
+          {mobileDrawerOpen && (
+            <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+              <ul>
+                {navItems.map((item, index) => (
+                  <li key={index} className="py-4">
+                    <Link to={item.path}>{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )} */}
         </div>
-        {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-            <ul>
-              {navItems.map((item, index) => (
-                <li key={index} className="py-4">
-                  <Link to={item.path}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
     </nav>
   );
